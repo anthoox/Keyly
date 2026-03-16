@@ -57,7 +57,7 @@ Todo está desarrollado con PHP bajo un patrón MVC propio, Bootstrap y PDO para
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/anthoox/gestor_de_claves.git retocar
+git clone https://github.com/anthoox/Keyly.git
 ```
 2. Copiar a la carpeta de tu servidor local (htdocs o equivalente).
 
@@ -73,7 +73,7 @@ git clone https://github.com/anthoox/gestor_de_claves.git retocar
 3. Importar database/database.sql en MySQL.
 
 4. Abrir en el navegador:
-    http://localhost/keyly/public retocar
+    http://localhost/keyly/public
 
 ---
 

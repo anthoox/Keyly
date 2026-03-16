@@ -1,0 +1,22 @@
+# Configuración y credenciales (CRÍTICO)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Dependencias (No se suben, el usuario debe hacer 'composer install')
+/vendor/
+node_modules/
+dist/
+
+# Logs y bases de datos locales
+*.log
+*.sqlite
+.phpunit.result.cache
+
+# Archivos del Sistema Operativo / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
