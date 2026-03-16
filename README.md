@@ -57,9 +57,9 @@ Todo está desarrollado con PHP bajo un patrón MVC propio, Bootstrap y PDO para
 1. Clonar el repositorio:
 
 ```bash
-git clone https://github.com/anthoox/Keyly.git
+git clone https://github.com/anthoox/keyly.git
 ```
-2. Copiar a la carpeta de tu servidor local (htdocs o equivalente).
+2. Copiar a la carpeta de tu servidor local (htdocs o www o equivalente).
 
 3. Crear .env en la raíz con tus credenciales de DB:
     DB_HOST=localhost
@@ -70,27 +70,35 @@ git clone https://github.com/anthoox/Keyly.git
     ENCRYPT_KEY="tu_propio_cifrado"
     ENCRYPT_IV="tu_propio_cifrado"
 
-3. Importar database/database.sql en MySQL.
+3. Crea tu base de datos con utf8mb4_unicode_ci
 
-4. Abrir en el navegador:
-    http://localhost/keyly/public
+4. Importar database/database.sql en MySQL.
+
+5. Abrir en el navegador:
+    http://localhost/keyly/
 
 ---
 
 🗂 Estructura
 /app
     /controllers
+    /entities
     /models
     /views
-/resources
+    .htaccess
+/core
+    /config
+    /database
+    /helpers
+    .htaccess
+/public
     /css
     /js
-    /imgs
-/public
+    /resources
+    autoload.php
     index.php
-/database
-    DataBase.php
-    database.sql
+    .htaccess
+.env
 
 
 ---
@@ -101,7 +109,6 @@ No compartir .env. Cada usuario configura su conexión.
 
 Para uso local y educativo.
 
-Contraseñas almacenadas de forma segura.
 
 ---
 

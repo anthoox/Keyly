@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Si entran a la raíz vacía, cargar silenciosamente la carpeta public
+    RewriteRule ^$ public/ [L]
+
+    # 2. Si piden un archivo que EXISTE en public (como css/style.css), servirlo
+    RewriteCond %{DOCUMENT_ROOT}/keyly/public/$1 -f
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # 3. Si piden cualquier otra cosa (como ?c=auth), mandarlo al index.php de public
+    # El [QSA] es vital para que tus parámetros ?c= y ?a= no se pierdan
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ public/index.php [L,QSA]
+</IfModule>
