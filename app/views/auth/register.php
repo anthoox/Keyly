@@ -33,5 +33,6 @@ if (isset($_SESSION['errors'])) {
 }
 
 
+require_once __DIR__ . '/../../views/components/footer.php';
 
 ?>

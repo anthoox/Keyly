@@ -26,16 +26,17 @@ require_once __DIR__ . '/../../../core/helpers/showError.php';
     <div class="alert alert-warning text-center col-6">
       Tu sesión ha expirado por inactividad.
     </div>
-    </div>
-  <?php endif; ?>
+  </div>
+<?php endif; ?>
 
-  <?php
-  if (isset($_SESSION['errors'])) {
-    showError($_SESSION['errors']); // limpiar después de mostrar errores
-    unset($_SESSION['errors']);
-    session_destroy();
-  }
+<?php
+if (isset($_SESSION['errors'])) {
+  showError($_SESSION['errors']); // limpiar después de mostrar errores
+  unset($_SESSION['errors']);
+  session_destroy();
+}
 
+  require_once __DIR__ . '/../../views/components/footer.php';
 
 
   ?>
