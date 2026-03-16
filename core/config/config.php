@@ -2,7 +2,7 @@
 // Configuración general de la aplicación
 
 // Ruta base de la app (para URLs absolutas)
-define('BASE_URL', '/keyly/');
+define('BASE_URL', '/keyly');
 
 // URL completa (por ejemplo, para redirecciones)
 define('FULL_BASE_URL', 'http://localhost/keyly');

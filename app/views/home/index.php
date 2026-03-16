@@ -2,7 +2,7 @@
    <div class="hero-image">
      <img src="<?= FULL_BASE_URL ?>/resources/imgs/hero.png" alt="Imagen de candado">
    </div>
-   <h1 class="mt-2">Bienvenido a Gestor de Claves</h1>
+   <h1 class="mt-2">Bienvenido a <span class="fw-bold text-primary">Keyly</span></h1>
    <p class="col-6 text-center">
      Gestiona todos tus servicios y contraseñas de forma segura, rápida y sencilla.
      Accede a tus datos, actualiza tu información y protege tus cuentas con un solo lugar,

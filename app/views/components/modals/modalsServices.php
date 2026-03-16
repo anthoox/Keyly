@@ -17,7 +17,7 @@
 <div class="modal fade" id="addServiceModal" tabindex="-1" aria-labelledby="addServiceModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content ">
-      <form action="/keys/public/?c=services&a=store" method="POST">
+      <form action="<?= FULL_BASE_URL ?>/?c=services&a=store" method="POST">
         <div class="modal-header bg-primary text-white">
           <h5 class="modal-title" id="addServiceModalLabel">Añadir nuevo servicio</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
