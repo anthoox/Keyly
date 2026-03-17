@@ -5,7 +5,7 @@ require_once __DIR__ . '/../../../core/helpers/showError.php';
 ?>
 <!-- Contenedor central para el formulario de registro -->
 <div class="row justify-content-center mt-5">
-  <div class="col-md-6">
+  <div class="col-md-4">
     <h2 class="mb-4">Crear cuenta</h2>
     <form method="post" action="<?= FULL_BASE_URL ?>/?c=auth&a=register">
       <div class=" mb-3">

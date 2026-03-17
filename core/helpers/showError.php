@@ -13,9 +13,8 @@ function showError($errors)
     echo 
     "<div class='p-2'>
       <div class='d-flex justify-content-center align-items-center w-100 mt-3'>
-        <div class='alert alert-danger col-6'>
+        <div class='alert alert-danger col-4'>
           <ul class='mb-0'>";
-    // Si $errors es un array, recorremos cada elemento
     if (is_array($errors)) {
       foreach ($errors as $error) {
         echo "<li>$error</li>";
